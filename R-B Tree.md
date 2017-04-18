@@ -9,3 +9,4 @@
 > _这里解释下，4性质规定了最短路径应该是全为黑色节点，最长可能是红黑交替的节点.那么如果性质5成立，也就是说最短和最长之间有两倍的差距，且不多于两倍。_
 
 * Java中TreeMap,TreeSet利用了该数据结构；Java 8中的hashMap冲突后，在链表超出一定数量后使用了该数据结构，Java 7冲突单纯使用了链表。
+(红黑树)[http://dongxicheng.org/structure/red-black-tree/]
