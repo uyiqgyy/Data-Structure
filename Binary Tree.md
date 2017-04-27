@@ -1,17 +1,17 @@
 # Binary Tree 二叉树
 > By __uyiqgyy__
 > _Apr 27th, 2017_
-## 定义
+## 1.定义
 
-1.每个节点最多只有两个分支(不存在分支度大于2的节点)的树结构.
-2.二叉树的第i层至多拥有<img src="http://chart.googleapis.com/chart?cht=tx&chl=$2^{i-1}$" style="border:none;">个节点数；深度为k的二叉树至多总共有<img src="http://chart.googleapis.com/chart?cht=tx&chl=$2^{k%2B1}-1$" style="border:none;">个节点数
-3.对于任意一棵二叉树，n0 = 叶子结点总数，n1 = 度为1的结点总数，n2 = 度为2的结点总数，n 为总结点数：
+1. 每个节点最多只有两个分支(不存在分支度大于2的节点)的树结构.
+2. 二叉树的第i层至多拥有<img src="http://chart.googleapis.com/chart?cht=tx&chl=$2^{i-1}$" style="border:none;">个节点数；深度为k的二叉树至多总共有<img src="http://chart.googleapis.com/chart?cht=tx&chl=$2^{k%2B1}-1$" style="border:none;">个节点数
+3. 对于任意一棵二叉树，n0 = 叶子结点总数，n1 = 度为1的结点总数，n2 = 度为2的结点总数，n 为总结点数：
   * n0 = n2 + 1; 
   * 分支线总数 = n - 1 = n1 + 2n2;
   * n = n0 + n1 + n2;
   * n0 + n1 + n2 - 1 = n1 + 2n2 => n0 = n2 + 1;
-4.满二叉树的深度：<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2(n%2B1)}$" style="border:none;">
-5.完全二叉树的深度：向下取整数<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2n}%2B1$" style="border:none;">
+4. 满二叉树的深度：<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2(n%2B1)}$" style="border:none;">
+5. 完全二叉树的深度：向下取整数<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2n}%2B1$" style="border:none;">
   * 路径 Path
   * 深度 Depth
   * 高度 Height
