@@ -53,12 +53,48 @@ _有区别的_
 ### 3.1 前序
 * 最先读取根节点，然后再读取左子树（按照同样的方法读取子树上的节点），最后读取右子树。
 * <img src="http://upload-images.jianshu.io/upload_images/1396375-9cd286f6ee54aae2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+``` c++
+//前序遍历
+void preorder(TreeNode *root, vector<int> &path)
+{
+    if(root != NULL)
+    {
+        path.push_back(root->val);
+        preorder(root->left, path);
+        preorder(root->right, path);
+    }
+}
+```
 ### 3.2 中序
 * 第二个读取根节点，最先要读取的是左子树，然后根节点，最后右子树。
 * <img src="http://upload-images.jianshu.io/upload_images/1396375-21b62af4c49f03c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+``` c++
+//中序遍历
+void inorder(TreeNode *root, vector<int> &path)
+{
+    if(root != NULL)
+    {
+        inorder(root->left, path);
+        path.push_back(root->val);
+        inorder(root->right, path);
+    }
+}
+```
 ### 3.3 后序
 * 最后一个读取根节点，最先读取的是左子树，第二个读取右子树，最后读取根节点。
 * <img src="http://upload-images.jianshu.io/upload_images/1396375-f929b5b8ae27e10d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+``` c++
+//后续遍历
+void postorder(TreeNode *root, vector<int> &path)
+{
+    if(root != NULL)
+    {
+        postorder(root->left, path);
+        postorder(root->right, path);
+        path.push_back(root->val);
+    }
+}
+```
 ### 3.4 广度遍历 & 深度遍历
 ## 4. BST <a name="4"/>
 * 若任意节点的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
