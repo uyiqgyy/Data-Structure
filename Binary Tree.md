@@ -2,6 +2,15 @@
 > By __uyiqgyy__
 > _Apr 27th, 2017_
 * [1. 定义](#1)
+* [2. 存储方式](#2)
+* [3. 遍历](#3)
+* [4. BST](#4)
+* [5. 霍夫曼树](#5)
+* [6. 平衡树](#6)
+* [7. 红黑树](#7)
+* [8. 二叉堆](#8)
+* [9. Java里的二叉树](#9)
+
 ## 1.定义 <a name = "1"/>
 1. 每个节点最多只有两个分支(不存在分支度大于2的节点)的树结构.
    - 路径 Path
@@ -33,14 +42,14 @@ _有区别的_
 若设二叉树的深度为h，除第 h 层外，其它各层 (1～h-1) 的结点数都达到最大个数，第 h 层所有的结点都连续集中在最左边，这就是完全二叉树。
 * 完全二叉树的深度：向下取整数<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2n}%2B1$" style="border:none;">
 * <img src="http://upload-images.jianshu.io/upload_images/1170656-5a5492bf84d52b72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-## 2. 存储方式
+## 2. 存储方式<a name="2"/>
 ### 2.1 顺序存储
 * <img src="http://7xirg5.com1.z0.glb.clouddn.com/binary-tree-arr.png">
 * 因为完全二叉树有以上这些规则和特点，所以我们在日常使用中尽量使用完全二叉树，存储方式最好选择顺序存储；
 ### 2.2 链式存储
 * 方便新增，删除操作；结构为数据域+左孩子指针+右孩子指针 （二叉链表），如果有必要的情况下可以添加双亲指针，指向结点的双亲（三叉链表），这都是根据业务需求_灵活控制_的
 * <img src="http://7xirg5.com1.z0.glb.clouddn.com/binary-tree-lian.png">
-## 3. 遍历
+## 3. 遍历<a name="3"/>
 ### 3.1 前序
 * 最先读取根节点，然后再读取左子树（按照同样的方法读取子树上的节点），最后读取右子树。
 * <img src="http://upload-images.jianshu.io/upload_images/1396375-9cd286f6ee54aae2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -51,18 +60,18 @@ _有区别的_
 * 最后一个读取根节点，最先读取的是左子树，第二个读取右子树，最后读取根节点。
 * <img src="http://upload-images.jianshu.io/upload_images/1396375-f929b5b8ae27e10d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 ### 3.4 广度遍历 & 深度遍历
-## 4. BST 
+## 4. BST <a name="4"/>
 * 若任意节点的左子树不空，则左子树上所有结点的值均小于它的根结点的值；
 * 若任意节点的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
 * 任意节点的左、右子树也分别为二叉查找树；
 * 没有键值相等的节点。
-## 5. 霍夫曼树
-## 6. 平衡树
+## 5. 霍夫曼树<a name="5"/>
+## 6. 平衡树<a name="6"/>
 * 平衡二叉树——平衡二叉树又被称为AVL树（区别于AVL算法），它是一棵二叉排序树，且具有以下性质：它是一棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。
-## 7. 红黑树
-## 8. 二叉堆
+## 7. 红黑树<a name="7"/>
+## 8. 二叉堆<a name="8"/>
 ### 8.1 堆排序算法
-## 9. Java 二叉树使用地方
+## 9. Java 二叉树使用地方<a name="9"/>
 * TreeSet,TreeMap都运用了红黑树。
 * Java 8 中，HashMap在冲突数为8后，链表改用红黑树。
 
