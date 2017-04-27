@@ -26,7 +26,7 @@
    2. 分支线总数 = n1 + 2n2;
    3. n = n0 + n1 + n2; 
    4. n0 + n1 + n2 - 1 = n1 + 2n2 => n0 = n2 + 1;
-5. 如果对一棵有 n 个结点的完全二叉树(其深度为<img src="http://chart.googleapis.com/chart?cht=tx&chl=$[\log^{2n}]%2B1$" style="border:none;">的结点按层序编号(从第1层到第<img src="http://chart.googleapis.com/chart?cht=tx&chl=$[\log^{2n}]%2B1$" style="border:none;">层,每一层从左到右),对任一结点i (1 <= i <= n) 有:
+5. 如果对一棵有 n 个结点的完全二叉树(其深度为<img src="http://chart.googleapis.com/chart?cht=tx&chl=$[\log_{2}^{n}]%2B1$" style="border:none;">的结点按层序编号(从第1层到第<img src="http://chart.googleapis.com/chart?cht=tx&chl=$[\log_{2}^{n}]%2B1$" style="border:none;">层,每一层从左到右),对任一结点i (1 <= i <= n) 有:
    1. 如果 i = 1 ,则结点i是二叉树的根,无双亲;如果i > 1,则其双亲是结点 [ i /2 ];
    2. 如果 2i > n,则结点i无左孩子(结点i为叶子结点);否则其左孩子是结点2i;
    3. 如果 2i +1 > n,则结点i无右孩子;否则其右孩子是结点2i +1;
@@ -36,10 +36,10 @@
 * 国外(国际)定义:a binary tree T is full if each node is either a leaf orpossesses exactly two childnodes.
 大意为：如果一棵二叉树的结点要么是叶子结点，要么它有两个孩子结点，这样的树就是满二叉树。
 _有区别的_
-* 满二叉树的深度：<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2(n%2B1)}$" style="border:none;">
+* 满二叉树的深度：<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log_{2}^{n%2B1}$" style="border:none;">
 ### 1.2 完全二叉树
 若设二叉树的深度为h，除第 h 层外，其它各层 (1～h-1) 的结点数都达到最大个数，第 h 层所有的结点都连续集中在最左边，这就是完全二叉树。
-* 完全二叉树的深度：向下取整数<img src="http://chart.googleapis.com/chart?cht=tx&chl=$\log^{2n}%2B1$" style="border:none;">
+* 完全二叉树的深度：向下取整数<img src="http://chart.googleapis.com/chart?cht=tx&chl=$[\log_{2}^{n}]%2B1$" style="border:none;">
 * <img src="http://upload-images.jianshu.io/upload_images/1170656-5a5492bf84d52b72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 ## 2. 存储方式<a name="2"/>
 ### 2.1 顺序存储
